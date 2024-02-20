@@ -1,11 +1,49 @@
 <!doctype html>
 <html lang="en-US">
     <head>
-        <!-- this does not show in browser test test -->
+        <!-- line 5 = what character set to use
+             line 6 = for mobile phone, so it displays as expected -->
         <meta chraset = "uft-8"/>
         <meta name = "viewport" content = "width=device-width"/>
-        <title>Page 2</title>
+        <!-- The title that will show on browser -->
+        <title>Wireframe</title>
+        <!-- colors should only be in hexadecimal, unless you are using transparancy, then it is RBGa (a = alpha) -->
+        <style>
+            header, footer {
+                background-color: #fedcba;
+                padding: 10px 15px 5px;
+                /* margin: 15px; */
+            }
+            h2 {
+                /* font-size: 3rem; */
+            }
+            body {
+                margin: 0;
+            }
+            main {
+                margin: 20px;
+            }
+            /* main div means all divs in main */
+            p, main div {
+                border: 1px solid #000000;
+                padding: 30px 5px;
+            }
+
+        </style>
     </head>
     <body> 
+        <div id="wrapper">
+            <header>
+                <h1>Here is the header</h1>
+            </header>
+            <main>
+                <h2>Cool stuff</h2>
+                <p>Stuff Here</p>
+                <div>more stuff</div>
+            </main>
+            <footer>
+                Footer
+            </footer>
+        </div>
     </body>
 </html>
