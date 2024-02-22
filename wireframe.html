@@ -8,41 +8,117 @@
         <!-- The title that will show on browser -->
         <title>Wireframe</title>
         <!-- colors should only be in hexadecimal, unless you are using transparancy, then it is RBGa (a = alpha) -->
+        <!-- padding = inside, margin = outside-->
+        <!-- ";" are required (for this class) after lines-->
         <style>
-            header, footer {
-                background-color: #fedcba;
-                padding: 10px 15px 5px;
-                /* margin: 15px; */
-            }
-            h2 {
-                /* font-size: 3rem; */
-            }
             body {
                 margin: 0;
+                font-size: 1.1rem;
             }
+
+            header, footer {
+                /* background-color: #815933; */
+                background-color: #1f0f88;
+                padding: 10px 15px 5px;
+                margin: 0px;
+            }
+            header h1{
+                margin: 5px;
+                color: #ffffff;
+            }
+            button {
+                margin: 5px;
+                padding: 5px;
+                background-color: #0f4418;
+                color: #fff;
+                
+            }
+            footer {
+                font-size: 1rem;
+            }
+            footer div{
+                margin: 5px;
+                padding: 5px;
+                background-color: #fff;
+            }
+
             main {
                 margin: 20px;
             }
-            /* main div means all divs in main */
-            p, main div {
-                border: 1px solid #000000;
-                padding: 30px 5px;
+            p {
+                margin: 0px;
+                padding: 0px;
+                margin-bottom: 10px;
+                /* border: 1px solid #000; */
             }
-
+            #subsection {
+                border: 1px solid #000000;
+                padding: 10px;
+                padding-bottom: 25px;
+                background-color: #4272c53b;
+            }
+            #futureImage{
+                height: 10rem;
+                width: 20rem;
+                text-align: center;
+                background-color: #91ff00;
+                color:#ff0062;
+            }
+            
         </style>
     </head>
     <body> 
         <div id="wrapper">
             <header>
-                <h1>Here is the header</h1>
+                <button type = "button">
+                    <!-- add <img> later  into button class-->
+                    Home
+                </button>
+                
+                <h1>Baseball!</h1>
+                <button type = "button">
+                    <!-- add <img> later  into button class-->
+                    Menu
+                </button>
             </header>
             <main>
-                <h2>Cool stuff</h2>
-                <p>Stuff Here</p>
-                <div>more stuff</div>
+                <!-- ALL TEXT ON THIS PAGE TO BE CHANGED LATER-->
+                <h1>Main Title</h1>
+                <!-- this will eventually be a basic information paragraph-->
+                <p>text text paragraph blah blah this is just filler text for now. 
+                    A filler paragraph about the website and, maybe or, baseball. 
+                    Maybe another sentence about me and why i made this website.
+                </p>
+
+                <!-- this is the first subsection, most likely about mlb-->
+                <h2>Subsection 1!</h2> 
+                <div id = "subsection">
+                    <!-- probably rules and similar items -->
+                    <h3>Subheader 1.1</h3>
+                    <p>Some basic information about this subsection 1.1</p>
+                    <div id = "futureImage">Image 1.1</div>
+                    <!-- probably about leagues and farm systems -->
+                    <h3>Subheader 1.2</h3>
+                    <p>Some basic information about this subsection 1.2</p>
+                    <div id = "futureImage">Image 1.2</div>
+                </div>
+
+                <!-- this is the second subsection: internation bball-->
+                <h2>Subsection 2!</h2> 
+                <div id = "subsection">
+                    <!-- where it is famous and numbers -->
+                    <h3>Subheader 2.1</h3>
+                    <p>Some basic information about this subsection 2.1</p>
+                    <div id = "futureImage">Image 2.1</div>
+                    <!-- international tournaments (WBC olympics) -->
+                    <h3>Subheader 2.2</h3>
+                    <p>Some basic information about this subsection 2.2</p>
+
+                    <div id = "futureImage">Image 2.2</div>
+                </div>
             </main>
             <footer>
-                Footer
+                <div>This will be all of the information about who made the page, when, and for what. This is just filler for now</div>
             </footer>
         </div>
     </body>
