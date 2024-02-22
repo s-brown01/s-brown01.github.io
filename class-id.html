@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <!-- this does not show in browser
+            the head tells the browser how to display -->
+        <meta chraset = "uft-8"/>
+        <meta name = "viewport" content = "width=device-width"/>
+        <title>Class and ID</title>
+        <style>
+          /* # means id  */
+          #wrapper {
+            color: #098765;
+          }
+          h1 {
+            color: #123456;
+          }
+          div {
+            color: #8f9900;
+          }
+          /* . means class */
+          .number2, .number3 {
+            color: #ff0000;
+          }
+          .number2 {
+            color: #cc1;
+          }
+
+        </style>
+    </head>
+    <body>
+        <!-- id should be used 1 time per page and seldomly/carefully -->
+        <div id = "wrapper">
+            <!-- adding wrapper to handle multiple screen sizes -->
+            <h1>This is an example of using classes</h1>
+            <div>One thing</div>
+            <div class = "number2">Two thing</div>
+            <div class = "number3">Three thing</div>
+        </div>
+    </body>
+</html>
