@@ -1,31 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- go to https://validator.w3.org to validate all code -->
-    <!-- ALWAYS VALIDATE CODE -->
-    <!-- we do not need the / on null elements like <meta /> -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Example Page</title>
-  </head>
-  <body>
-    <!-- add wrapper to handle desktop size -->
-    <div id = "wrapper">
-      <header>
-        <!-- TODO: add logo and menu later-->
-      </header>
-      <main>
-        <!-- EVERY PAGE HAS TO HAVE AN H1 (for accessibility) -->
-        <h1>header 1</h1>
-        <!-- to make a flex box -->
-        <ul>
-          <li>box1</li>
-          <li>box2</li>
-          <li>box3</li>
-          <li>box4</li>
-          <li>box5</li>
-        </ul>
-      </main>
-    </div>
-  </body>
-</html>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <!-- go to https://validator.w3.org to validate all code -->
+      <!-- ALWAYS VALIDATE CODE -->
+      <!-- we do not need the / on null elements like <meta /> -->
+      <!-- either all void elements have slash or none do -->
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Example Page</title>
+    <link rel="stylesheet" href="css/example-style.css" />
+    </head>
+    <body>
+      <!-- add wrapper to handle desktop size -->
+      <div id = "wrapper">
+        <header>
+          <!-- TODO: add logo and menu later-->
+        </header>
+        <main>
+          <!-- EVERY PAGE HAS TO HAVE AN H1 (for accessibility) -->
+          <h1>header 1</h1>
+          <!-- to make a flex box -->
+          <ul class = "flex-container">
+            <li class = "flex-item">box1</li>
+            <li class = "flex-item">box2</li>
+            <li class = "flex-item">box3</li>
+            <li class = "flex-item">box4</li>
+          </ul>
+          <!-- youtube auto generated code, created validation error  -->
+          <iframe src="https://www.youtube.com/embed/_NTfTd4HCRo?si=uEw5r3Z3ONec20HM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+          <p>
+            paragraph
+          </p>
+        </main>
+        <footer>footer</footer>
+      </div>
+    </body>
+  </html>
