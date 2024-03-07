@@ -9,16 +9,26 @@ header, footer {
     padding: 10px 15px 5px;
     margin: 0px;
 }
-header h1{
+/* header h1{
     margin: 5px;
     color: #ffffff;
+} */
+.navigation {
+    display: flex;
+    color: #CCC;
+    flex-flow: row;
+    justify-content:space-between;
+}
+.navigation-item{
+    margin: 10px 20px; 
+    display:inline;
+
 }
 button {
     margin: 5px;
     padding: 5px;
     background-color: #0f4418;
     color: #fff;
-    
 }
 footer {
     font-size: 1rem;

@@ -1,1 +1,1 @@
-No pictures found yet
+All images are free to use and share
