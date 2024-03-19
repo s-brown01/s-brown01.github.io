@@ -1,7 +1,10 @@
+/* Star "*" is a wild card, so it means every element */
 body {
     margin: 0;
     font-size: 1.1rem;
-}
+    /* basic font for everything, can change using specificity */
+    font-family: 'Neuton';
+} 
 
 header, footer {
     /* background-color: #815933; */
@@ -9,10 +12,11 @@ header, footer {
     padding: 10px 15px 5px;
     margin: 0px;
 }
-/* header h1{
+header h1{
+    font-family: 'Nanum Myeongjo';
     margin: 5px;
     color: #ffffff;
-} */
+}
 .navigation {
     display: flex;
     color: #CCC;
@@ -22,7 +26,6 @@ header, footer {
 .navigation-item{
     margin: 10px 20px; 
     display:inline;
-
 }
 button {
     margin: 5px;
@@ -49,10 +52,18 @@ p {
     /* border: 1px solid #000; */
 }
 .subsection {
+    /* display:flex; */
+    /* flex-flow: row; */
     border: 1px solid #000000;
     padding: 10px;
+    margin: 5px;
     padding-bottom: 25px;
     background-color: #4272c53b;
+    /* justify-content: space-between; */
+}
+.subsection-item {
+    background-image: "img/mlb_logo.jpg";
+    /* display:inline; */
 }
 .futureImage{
     height: 10rem;

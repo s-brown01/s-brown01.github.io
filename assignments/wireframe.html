@@ -1,73 +1,83 @@
 <!doctype html>
 <html lang="en-US">
-    <head>
-        <!-- line 5 = what character set to use
-             line 6 = for mobile phone, so it displays as expected -->
-        <meta charset = "UTF-8"/>
-        <meta name = "viewport" content = "width=device-width"/>
-        <!-- The title that will show on browser -->
-        <title>Wireframe</title>
-        <!-- colors should only be in hexadecimal, unless you are using transparancy, then it is RBGa (a = alpha) -->
-        <!-- padding = inside, margin = outside-->
-        <!-- ";" are required (for this class) after lines-->
-        <link rel="stylesheet" href="../css/wireframe-style.css" />
-    </head>
-    <body> 
-        <div id="wrapper">
-            <header class = "navigation">
-                <button type = "button" class = "navigation-item">
-                    <!-- add <img> later  into button-->
-                    Home
-                </button>
-                
-                <h1 class = "navigation-item">Baseball!</h1>
-                <button type = "button" class = "navigation-item">
-                    <!-- add <img> later  into button-->
-                    Menu
-                </button>
-            </header>
+  <head>
+    <!-- line 5 = what character set to use
+          line 6 = for mobile phone, so it displays as expected -->
+    <meta charset = "UTF-8"/>
+    <meta name = "viewport" content = "width=device-width"/>
+    
+    <!-- Stylesheet import  -->
+    <link rel="stylesheet" href="../css/wireframe-style.css" />
 
-            <main>
-                <!-- ALL TEXT ON THIS PAGE TO BE CHANGED LATER-->
-                <h1>Main Title</h1>
-                <!-- this will eventually be a basic information paragraph-->
-                <p>text text paragraph blah blah this is just filler text for now. 
-                    A filler paragraph about the website and, maybe or, baseball. 
-                    Maybe another sentence about me and why i made this website.
-                </p>
+    <!-- Fonts import using fonts.google.com -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
 
-                <!-- this is the first subsection, most likely about mlb-->
-                <h2>Subsection 1!</h2> 
-                <div class = "subsection">
-                    <!-- probably rules and similar items -->
-                    <h3>Subheader 1.1</h3>
-                    <p>Some basic information about this subsection 1.1</p>
-                    <div class = "futureImage">Image 1.1</div>
-                    <img src = "../img/mlb_logo.jpg" alt = "MLB batterman logo">
-                    <!-- probably about leagues and farm systems -->
-                    <h3>Subheader 1.2</h3>
-                    <p>Some basic information about this subsection 1.2</p>
-                    <div class = "futureImage">Image 1.2</div>
-                </div>
+    
+    <!-- The title that will show on browser -->
+    <title>Wireframe</title>
+    <!-- colors should only be in hexadecimal, unless you are using transparancy, then it is RBGa (a = alpha) -->
+    <!-- padding = inside, margin = outside-->
+    <!-- ";" are required (for this class) after lines-->
 
-                <!-- this is the second subsection: internation bball-->
-                <h2>Subsection 2!</h2> 
-                <div class = "subsection">
-                    <!-- where it is famous and numbers -->
-                    <h3>Subheader 2.1</h3>
-                    <p>Some basic information about this subsection 2.1</p>
-                    <div class = "futureImage">Image 2.1</div>
-                    <!-- international tournaments (WBC olympics) -->
-                    <h3>Subheader 2.2</h3>
-                    <p>Some basic information about this subsection 2.2</p>
+  </head>
 
-                    <div class = "futureImage">Image 2.2</div>
-                </div>
-            </main>
-            
-            <footer>
-                <div>This will be all of the information about who made the page, when, and for what. This is just filler for now</div>
-            </footer>
+  <body> 
+    <div id="wrapper">
+      <header class = "navigation">
+        <button type = "button" class = "navigation-item">
+          <!-- add <img> later  into button-->
+          Home
+        </button>
+        
+        <h1 class = "navigation-item">Baseball!</h1>
+        <button type = "button" class = "navigation-item">
+          <!-- add <img> later  into button-->
+          Menu
+        </button>
+      </header>
+
+      <main>
+        <!-- ALL TEXT ON THIS PAGE TO BE CHANGED LATER-->
+        <h1>Main Title</h1>
+        <!-- this will eventually be a basic information paragraph-->
+        <p>text text paragraph blah blah this is just filler text for now. 
+            A filler paragraph about the website and, maybe or, baseball. 
+            Maybe another sentence about me and why i made this website.
+        </p>
+
+        <!-- this is the first subsection, most likely about mlb-->
+        <h2>Subsection 1!</h2> 
+        <div class = "subsection">
+          <!-- probably rules and similar items -->
+          <h3 class = "subsection-item">Subheader 1.1</h3>
+          <p class = "subsection-item">Some basic information about this subsection 1.1</p>
+          <img class = "subsection-item" src = "../img/mlb_logo.jpg" alt = "MLB batterman logo" width = 200>
+          <!-- probably about leagues and farm systems -->
+          <h3 class = "subsection-item">Subheader 1.2</h3>
+          <p class = "subsection-item">Some basic information about this subsection 1.2</p>
+          <!-- <div class = "futureImage">Image 1.2</div> -->
         </div>
-    </body>
+
+        <!-- this is the second subsection: internation bball-->
+        <h2>Subsection 2!</h2> 
+        <div class = "subsection">
+          <!-- where it is famous and numbers -->
+          <h3>Subheader 2.1</h3>
+          <p>Some basic information about this subsection 2.1</p>
+          <div class = "futureImage">Image 2.1</div>
+          <!-- international tournaments (WBC olympics) -->
+            <h3>Subheader 2.2</h3>
+            <p>Some basic information about this subsection 2.2</p>
+
+            <div class = "futureImage">Image 2.2</div>
+          </div>
+      </main>
+      
+      <footer>
+        <div>This will be all of the information about who made the page, when, and for what. This is just filler for now</div>
+      </footer>
+    </div>
+  </body>
 </html>
