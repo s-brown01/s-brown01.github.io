@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Example 2</title>
+
+    <style>
+      .nav-menu ul {
+        list-style: none;
+      }
+      .nav-menu li {
+        color: white;
+        text-decoration: white;
+      }
+      /* MEDIA QUERIES */
+      /* it allows you to change css for window size */
+      /* This means that once you hit 768px, this exists */
+      /* THEY SHOULD BE ON BOTTOM OF CSS */
+      @media(min-width: 768px){
+        .menu-toggle {
+          display:none; /* this means don't display*/
+        }
+        .nav-menu{
+          display:block;
+        }
+        .nav-menu ul{
+          display: flex;
+        }
+        .nav-menu li {
+          margin-right: 20px;
+
+        }
+
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- 9776 is the specific char for the hamburger menu-->
+        <div class = "menu-toggle">&#9776;</div>
+        <nav class = "nav-menu">
+          <ul>
+            <li><a href ="#">Example1</a></li>
+            <li><a href ="#">Example2</a></li>
+            <li><a href ="#">Example3</a></li>
+            <li><a href ="#">Example4</a></li>
+          </ul>
+        </nav>
+    </header>
+</body>
+</html>

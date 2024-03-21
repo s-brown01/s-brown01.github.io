@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Example 1</title>
+
+    <!-- inline and block elements deal with padding differently
+        inline - hard to adjust top and bottom; width adjustable though
+        block - creates new line
+        inline-block - inline w adjustable top/bottom
+    -->
+    <style>
+      * {
+        /* it can be easier to set everything to 0 */
+        /* this way you can control everything */
+        margin: 0px;
+        padding: 0px;
+      }
+
+      ul {
+        background-color: black;
+        list-style: none;
+        padding: 10px;
+      }
+      li {
+        display: inline-block;
+        padding: 10px;
+
+      }
+      li a {
+        color:white;
+        text-decoration: none;
+
+      }
+      /* pseudo - there are 4: 
+      link - unvisited;
+      visited - after you click;
+      hover - holding mouse over;
+      active - when you click */
+      li a:hover{
+        background-color: aqua;
+      }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="https://google.com">Google</a></li>
+          <!-- a is an anchor (hyperlink), "#" us a placeholder -->
+          <li><a href = "#">Example1</a></li>
+          <li><a href ="#">Example2</a></li>
+          <li><a href ="#">Example3</a></li>
+            
+        </ul>
+    </nav>
+</body>
+</html>
