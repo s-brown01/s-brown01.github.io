@@ -1,56 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Example 2</title>
+<html lang="en-us">
+  <head>
+    <!-- COPIED FROM Mr. Severtson's github -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Mobile-First Menu</title>
+    <!-- 
+      Styles and scripts are listed in this page are for done for demos and simplicity. 
+      You are expected to use external css and js on assignments!
 
+			Graded styles require:
+			- external stylesheets and js files
+			- hex colors, unless transparency is needed then rgba
+			- consistency 
+		-->
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        display: flex;
+        flex-flow: column;
+      }
+      .menu-toggle {
+        cursor: pointer;
+        font-size: 30px;
+      }
+      .nav-menu {
+        display: none;
+      }
+      .nav-menu.active {
+        display: block;
+      }
       .nav-menu ul {
-        list-style: none;
+        list-style-type: none;
+        margin-top: 8px;
       }
       .nav-menu li {
-        color: white;
-        text-decoration: white;
+        margin-bottom: 10px;
+        margin-left: 5px;
       }
-      /* MEDIA QUERIES */
-      /* it allows you to change css for window size */
-      /* This means that once you hit 768px, this exists */
-      /* THEY SHOULD BE ON BOTTOM OF CSS */
-      @media(min-width: 768px){
+      .nav-menu li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .nav-menu li a:hover {
+        border-bottom: 1px solid #fff;
+      }
+
+      /* This css is used for window size of 768 and wider.
+      Note: how it is listed at bottom of css */
+      @media (min-width: 768px) {
         .menu-toggle {
-          display:none; /* this means don't display*/
+          display: none;
         }
-        .nav-menu{
-          display:block;
+        .nav-menu {
+          display: block;
         }
-        .nav-menu ul{
+        .nav-menu ul {
           display: flex;
         }
         .nav-menu li {
           margin-right: 20px;
-
         }
-
       }
-  </style>
-  <!-- 
-    it matters when the script loads in
-    put javascript in the head
-    IF IT DOESN'T WORK: place in bottom of body and/or ask prof.-->
-</head>
-<body>
+    </style>
+  </head>
+  <body>
     <header>
-        <!-- 9776 is the specific char for the hamburger menu-->
-        <div class = "menu-toggle">&#9776;</div>
-        <nav class = "nav-menu">
-          <ul>
-            <li><a href ="#">Example1</a></li>
-            <li><a href ="#">Example2</a></li>
-            <li><a href ="#">Example3</a></li>
-            <li><a href ="#">Example4</a></li>
-          </ul>
-        </nav>
+      <!-- character for three lines -->
+      <div class="menu-toggle">&#9776;</div>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-</body>
+    <div class="content">
+      <!-- Your website content here -->
+    </div>
+    <!-- script referenced at bottom just to stop loading issues -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navMenu = document.querySelector(".nav-menu");
+
+        menuToggle.addEventListener("click", function () {
+          navMenu.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
 </html>
