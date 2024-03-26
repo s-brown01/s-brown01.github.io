@@ -6,8 +6,12 @@ body {
     font-family: 'Neuton';
 } 
 
+#wrapper {
+    /* margin :0 auto  - centers; top-bottom = 0px, left-right = auto */
+    margin: 0 auto;
+}
+
 header, footer {
-    /* background-color: #815933; */
     background-color: #1f0f88;
     padding: 10px 15px 5px;
     margin: 0px;
@@ -17,16 +21,23 @@ header h1{
     margin: 5px;
     color: #ffffff;
 }
-.navigation {
-    display: flex;
-    color: #CCC;
-    flex-flow: row;
-    justify-content:space-between;
+header h1:visited {
+    color:#ffffff;
+
 }
-.navigation-item{
-    margin: 10px 20px; 
+.navigation ul{
+    list-style-type: none;
+    display: inline;
+    padding: 0px;
+    margin: 0px;
+}
+.navigation li{
+    display: inline;
+}
+.navigation-item {
     display:inline;
 }
+
 button {
     margin: 5px;
     padding: 5px;
