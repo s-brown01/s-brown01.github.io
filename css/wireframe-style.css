@@ -9,6 +9,8 @@ body {
 #wrapper {
     /* margin :0 auto  - centers; top-bottom = 0px, left-right = auto */
     margin: 0 auto;
+    /* maximum width that our page can be */
+    max-width: 1050px;
 }
 
 header, footer {
