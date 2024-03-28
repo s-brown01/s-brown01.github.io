@@ -1,1 +1,23 @@
 /* CSS for the footer assignmet */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Neuton", "Times New Roman", "Serif";
+}
+footer {
+    color: #fff;
+    background-color: #21619D;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+footer a{
+    text-decoration: none;
+    border-bottom: 2px solid #fff;
+}
+footer a:hover {
+    background-color: #2CA800;
+}
+footer a:visited{
+    color: #000;
+}
