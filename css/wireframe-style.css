@@ -5,14 +5,12 @@ body {
     /* basic font for everything, can change using specificity */
     font-family: 'Neuton';
 } 
-
 #wrapper {
     /* margin :0 auto  - centers; top-bottom = 0px, left-right = auto */
     margin: 0 auto;
     /* maximum width that our page can be */
     max-width: 1050px;
 }
-
 header, footer {
     background-color: #1f0f88;
     padding: 10px 15px 5px;
@@ -39,7 +37,6 @@ header h1:visited {
 .navigation-item {
     display:inline;
 }
-
 button {
     margin: 5px;
     padding: 5px;
@@ -54,7 +51,6 @@ footer div{
     padding: 5px;
     background-color: #fff;
 }
-
 main {
     margin: 20px;
 }
