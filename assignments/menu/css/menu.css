@@ -1,0 +1,74 @@
+* {
+  /* reset everything */
+  padding: 0;
+  margin: 0;
+  font-family: "Neuton", "Times New Roman", "Serif";
+}
+header {
+  color: #fff;
+  background-color: #1f0f88;
+  padding: 10px 15px 10px;
+  margin: 0px;
+  display: flex;
+  justify-content:space-between;
+}
+header h1 {
+  display: inline;
+  font-family: 'Nanum Myeongjo';
+}
+header a:hover {
+  border-bottom: 1px solid #fff;
+  background-color: #40ee00;
+}
+header a:visited {
+  color: #fff;
+}
+header img {
+  border-radius: 50%;
+  border: 3px solid #000;
+  /* Using % here because it I want the image to be slightly lower in the box made for it */
+  margin-top: 15%;
+}
+.menu-toggle {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.menu-toggle:hover {
+  background-color: #40ee00;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  display: none;
+}
+nav.active{
+  display: block;
+}
+nav ul{
+  display: block;
+  margin-left: 0px;
+  list-style-type: none;
+}
+nav li a{
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 1px #fff solid;
+}
+/* Once the screen reaches 768px, run this code
+At bottom of css so it takes priority
+768 is size of tablets  */
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+  nav {
+    display: block;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav li {
+    margin-right: 20px;
+  }
+}
