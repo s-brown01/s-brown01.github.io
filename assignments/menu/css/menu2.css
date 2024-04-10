@@ -29,10 +29,11 @@ header h1 {
     font-size: 1.5rem;
     display: inline-block;
     cursor: pointer;
-    background-color: #111;
-    color: white;
-    margin: 5px;
-    border: none;
+    background-color: #2CA800;
+    color: #fff;
+    margin: 0px;
+    border: 3px outset #000;
+    border-radius: 10%;
     padding: 10px;
 }
 
@@ -97,11 +98,14 @@ header h1 {
     padding: 10px 15px;
 }
 
-/* Once the screen reaches 768px, run this code
-At bottom of css so it takes priority
-768 is size of tablets  */
-@media (min-width: 768px) {
+/* setting this to 600 so it matches the javascript  */
+@media (min-width: 600px) {
+    /* show the word "Menu" in the button */
     .openbtn span {
         display:inline;
+    }
+    /* change padding in the header */
+    header {
+        justify-content: space-around;
     }
 }
