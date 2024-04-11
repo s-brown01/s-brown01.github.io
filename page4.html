@@ -1,12 +1,43 @@
 <!doctype html>
 <html lang="en-US">
-    <head>
-        <!-- this does not show in browser
+
+<head>
+  <!-- this does not show in browser
             the head tells the browser how to display -->
-        <meta charset = "UTF-8"/>
-        <meta name = "viewport" content = "width=device-width"/>
-        <title>Page 4</title>
-    </head>
-    <body>
-    </body>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Page 4</title>
+</head>
+
+<body>
+  <header>
+    <img src="img/baseball.png" alt="A Baseball">
+    <h1>Baseball!</h1>
+    <div id="sideMenu" class="sidepanel">
+      <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">×</a>
+      <!-- This <BR> is to create a bit of space between the close button and the menu items-->
+      <BR>
+      <a href="index.html" class="menu-item">Home</a>
+      <a href="page2.html" class="menu-item">Page 2</a>
+      <a href="page3.html" class="menu-item">Page 3</a>
+      <a href="page4.html" class="menu-item">Page 4</a>
+      <a href="page5.html" class="menu-item" id="current-page">Page 5</a>
+    </div>
+    <button class="openbtn" onclick="openNav()">
+      &#9776;<span>Menu</span>
+    </button>
+  </header>
+
+  <footer>
+    <!-- information about me -->
+    This website was made by Sean-Paul Brown <BR>
+    Published - March 27, 2024. <BR>
+    &copy; copyright <BR>
+    <!-- using the <a> allows me to insert a hyperlink to my github accounr  -->
+    Find me on Github at <a href="https://github.com/s-brown01">s-brown01</a> to checkout my other projects!<BR>
+
+  </footer>
+  <script src="js/menu.js"></script>
+</body>
+
 </html>
