@@ -8,8 +8,8 @@ function openNav() {
 
     }
     else {
-        // if the screen is above 600, have it go 1/4 of the screen
-        document.getElementById("sideMenu").style.width = "25vw";
+        // if the screen is above 600, have it go 40% of the screen
+        document.getElementById("sideMenu").style.width = "40vw";
         document.getElementById("sideMenu").style.padding = "2rem";
     }
 
