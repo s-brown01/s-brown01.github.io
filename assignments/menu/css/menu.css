@@ -26,6 +26,11 @@ header h1 {
   display: inline;
   font-size: 2.3rem;
   margin: auto 0;
+  /* this creates 4 shadows around the word giving it an outlined look, with slight weigth to the left */
+  text-shadow: -3px 2px 0 #000,
+				  1px 1px 0 #000,
+				 1px -1px 0 #000,
+				-1px -1px 0 #000;
 }
 
 .openbtn {
@@ -45,8 +50,9 @@ header h1 {
 }
 
 .openbtn:hover {
-  /* when hovering, make it a dark green/grey*/
+  /* when hovering... */
   background-color: #0a270e;
+  box-shadow: 0px 0px 5px 3px #2CA800
 }
 
 .sidepanel {
