@@ -10,11 +10,13 @@
   font-family: "Neuton", "Times New Roman";
 }
 
-header {
+header, footer {
   color: #fff;
-  background-color: #1f0f88;
+  background-color: #090e76;
+}
+
+header {
   padding: 5px 30px;
-  margin: 0px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -138,8 +140,6 @@ header h1 {
 }
 
 footer {
-  color: #fff;
-  background-color: #1f0f88;
   padding: 10px;
   text-align: center;
   font-size: 1.1rem;
