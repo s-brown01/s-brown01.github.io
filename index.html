@@ -6,44 +6,49 @@
             the head tells the browser how to display -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>Page 2</title>
-  <link rel="stylesheet" href="css/menu.css" />
+  <title>Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Neuton&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-  <header>
-    <img src="img/baseball.png" alt="A Baseball">
-    <h1>Baseball!</h1>
-    <div id="sideMenu" class="sidepanel">
-      <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">×</a>
-      <!-- This <BR> is to create a bit of space between the close button and the menu items-->
-      <BR>
-      <a href="index.html" class="menu-item">Home</a>
-      <a href="page2.html" class="menu-item" id="current-page">Page 2</a>
-      <a href="page3.html" class="menu-item">Page 3</a>
-      <a href="page4.html" class="menu-item">Page 4</a>
-      <a href="page5.html" class="menu-item">Page 5</a>
-    </div>
-    <button class="openbtn" onclick="openNav()">
-      &#9776;<span>Menu</span>
-    </button>
-  </header>
-  <BR>
-  <footer>
-    <!-- information about me -->
-    This website was made by Sean-Paul Brown <BR>
-    Published - March 27, 2024. <BR>
-    &copy; copyright <BR>
-    <!-- using the <a> allows me to insert a hyperlink to my github account  -->
-    Find me on Github at <a href="https://github.com/s-brown01">s-brown01</a> to checkout my other projects!<BR>
+  <div id="content">
+    <header>
+      <img src="img/baseball.png" alt="A Baseball">
+      <h1>Baseball!</h1>
+      <div id="sideMenu" class="sidepanel">
+        <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">×</a>
+        <!-- This <BR> is to create a bit of space between the close button and the menu items-->
+        <BR>
+        <a href="index.html" class="menu-item" id="current-page">Home</a>
+        <a href="page2.html" class="menu-item">Page 2</a>
+        <a href="page3.html" class="menu-item">Page 3</a>
+        <a href="page4.html" class="menu-item">Page 4</a>
+        <a href="page5.html" class="menu-item">Page 5</a>
+      </div>
+      <button class="openbtn" onclick="openNav()">
+        &#9776;<span>Menu</span>
+      </button>
+    </header>
+    <main>
+      <h2>Home</h2>
+      <p>This is just some default text: to be filled in later.</p>
+    </main>
 
-  </footer>
+
+    <footer>
+      <!-- information about me -->
+      This website was made by Sean-Paul Brown <BR>
+      Published - March 27, 2024. <BR>
+      &copy; copyright <BR>
+      <!-- using the <a> allows me to insert a hyperlink to my github account  -->
+      Find me on Github at <a href="https://github.com/s-brown01">s-brown01</a> to checkout my other projects!<BR>
+
+    </footer>
+  </div>
   <script src="js/menu.js"></script>
 </body>
 
