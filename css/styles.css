@@ -10,40 +10,41 @@ header {
   padding: 5px 30px;
   margin: 0px;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
   justify-content: space-between;
 }
 
 header img {
-  padding: 10px 0px;
+  margin: auto 0;
   height: 3rem;
 }
 
 header h1 {
-  font-family: 'Nanum Myeongjo';
+  font-family: "Nanum Myeongjo";
   display: inline;
-  padding: 15px 0px 5px 0px;
   font-size: 2.3rem;
+  margin: auto 0;
 }
 
 .openbtn {
   font-size: 1.5rem;
   display: inline-block;
   cursor: pointer;
-  background-color: #2CA800;
+  background-color: #2ca800;
   color: #fff;
-  margin: 5px;
   border: 3px outset #000;
   border-radius: 10%;
   padding: 10px;
 }
 
 .openbtn span {
-  /* defualt is don't show the word "menu" */
+  /* defualt is none so don't show the word "menu" */
   display: none;
 }
 
 .openbtn:hover {
-  /* when hovering, make it a dark green/grey*/
   background-color: #0a270e;
 }
 
@@ -51,7 +52,9 @@ header h1 {
   /* low z-index (closer to 1) means that this will sit on top of everything else */
   z-index: 1;
   width: 0;
+  /* fixed means it will always be in the top left */
   position: fixed;
+  /* this how much offset from the top or left */
   top: 0;
   left: 0;
   background-color: #111;
@@ -86,32 +89,27 @@ header h1 {
   margin-bottom: 15px;
   /* Set the  position to absolue within it's parent, in this case it is within the sidepanel */
   position: absolute;
-  /* specify where the top and right positions are */
+  /* this how much offset from the top or right */
   top: 0;
   right: 40px;
   font-size: 2rem;
 }
 
-/* This is how the current page on the menu would look like */
+/* This is how the current page on the menu looks like */
 #current-page {
   background-color: #1f0f88;
-  border: 2px solid #2CA800;
-}
-
-#content {
-  font-size: 1.1rem;
-  padding: 10px 15px;
+  border: 2px solid #2ca800;
 }
 
 footer {
   color: #fff;
-  background-color: #21619d;
+  background-color: #1f0f88;
   padding: 10px;
   text-align: center;
   font-size: 1.1rem;
 }
 
-footer a {
+footer a{
   text-decoration: none;
   border-bottom: 2px solid #fff;
   color: #40ee00;
@@ -121,8 +119,14 @@ footer a:hover {
   background-color: #000;
 }
 
-footer a:visited {
+footer a:visited{
   color: #40ee00;
+}
+
+main {
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  background-color: #2caeea;
 }
 
 /* setting this to 600 so it matches the javascript  */
