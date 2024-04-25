@@ -126,10 +126,13 @@ footer a:visited {
 }
 
 main {
-  max-width: 1300px;
+  max-width: 1500px;
   font-size: 1.1rem;
   padding: 10px 10px;
   background-color: #04b0ff85;
+  display:flex;
+  align-content: center;
+  flex-flow: column;
 }
 
 main h1 {
