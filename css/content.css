@@ -2,12 +2,39 @@
   padding: 0px;
   margin: 0px;
 }
-#content {
-  /* paddi */
-  /* padding: 20 10; */
-  max-width: 1200;
-  /* width: 100%; */
-  /* margin: auto; */
-  background-color: #2caeea;
+
+main h1 {
+  font: "Neuton";
+  font-size: 2rem;
 }
+
+.contentbox {
+  border: 1px solid #000000;
+  padding: 10px;
+  background-color: #4edf198a;
+  display: flex;
+  flex-direction: column;
+  /* this aligns everything inside the box */
+  align-items: center;
+}
+
+.contentbox img {
+  text-align: center;
+  width: 90%;
+  box-shadow: 2px 2px 4px 1px #000000;
+  margin: 10px;
+}
+
+@media (min-width: 600px) {
+  .contentbox {
+    /* display:flex; */
+    flex-direction: row;
+  } 
+
+  .contentbox img {
+    margin-left: 20px;
+    width: 40%;
+  }
+}
+
 

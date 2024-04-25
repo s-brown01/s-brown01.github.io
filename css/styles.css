@@ -135,11 +135,7 @@ main {
   flex-flow: column;
 }
 
-main h1 {
-  text-align: center;
-}
-
-main h2 {
+main h1, main h2 {
   text-align: center;
 }
 
@@ -163,6 +159,17 @@ main p {
 .subsection img {
   width: 70%;
   padding: 0px 0px 15px;
+}
+
+.subsection a, .subsection a:visited {
+  color: #3017d6;
+  text-decoration: none;
+}
+
+.subsection a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #3017d6;
+  background-color: #04b0ff85;
 }
 
 /* setting this to 600 so it matches the javascript  */
