@@ -13,6 +13,7 @@ header {
   flex-wrap: wrap;
   flex-direction: row;
   align-content: center;
+  text-align: center;
   justify-content: space-between;
 }
 
@@ -25,6 +26,7 @@ header h1 {
   font-family: "Nanum Myeongjo";
   display: inline;
   font-size: 2.3rem;
+  /* text-align: center; */
   margin: auto 0;
 }
 
@@ -124,9 +126,17 @@ footer a:visited{
 }
 
 main {
+  max-width: 1300;
   font-size: 1.1rem;
-  padding: 10px 20px;
+  padding: 10px 10px;
   background-color: #2caeea;
+}
+
+main h2 {
+  width: 100px;
+  text-align: center  ;
+  background-color: #555;
+  margin: 0 auto;
 }
 
 /* setting this to 600 so it matches the javascript  */
@@ -142,7 +152,19 @@ main {
 
   /* change padding in the header */
   header {
-    justify-content: space-around;
+    color: #fff;
+    background-color: #1f0f88;
+    padding: 5px 30px;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;  
+  }
+
+  header h1 {
+    text-align: right;
   }
 
   .openbtn {

@@ -1,0 +1,13 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+#content {
+  /* paddi */
+  /* padding: 20 10; */
+  max-width: 1200;
+  /* width: 100%; */
+  /* margin: auto; */
+  background-color: #2caeea;
+}
+
