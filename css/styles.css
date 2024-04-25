@@ -111,7 +111,7 @@ footer {
   font-size: 1.1rem;
 }
 
-footer a{
+footer a {
   text-decoration: none;
   border-bottom: 2px solid #fff;
   color: #40ee00;
@@ -121,22 +121,45 @@ footer a:hover {
   background-color: #000;
 }
 
-footer a:visited{
+footer a:visited {
   color: #40ee00;
 }
 
 main {
-  max-width: 1300;
+  max-width: 1300px;
   font-size: 1.1rem;
   padding: 10px 10px;
-  background-color: #2caeea;
+  background-color: #04b0ff85;
+}
+
+main h1 {
+  text-align: center;
 }
 
 main h2 {
-  width: 100px;
-  text-align: center  ;
-  background-color: #555;
-  margin: 0 auto;
+  text-align: center;
+}
+
+main p {
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.subsection {
+  margin: 5px;
+  border: 1px solid #000;
+  text-align: center;
+  background-color: #4edf198a;
+}
+
+.subsection p {
+  text-align: center;
+  padding: 5px 25px;
+}
+
+.subsection img {
+  width: 70%;
+  padding: 0px 0px 15px;
 }
 
 /* setting this to 600 so it matches the javascript  */
@@ -160,14 +183,25 @@ main h2 {
     flex-wrap: wrap;
     flex-direction: row;
     align-content: center;
-    justify-content: space-between;  
+    justify-content: space-between;
   }
 
   header h1 {
-    text-align: right;
+    padding: 0px 0px 0px 55px;
   }
 
   .openbtn {
     border-radius: 20%;
+  }
+
+  main {
+    font-size: 1.2rem;
+  }
+  main br {
+    display:block;
+  }
+
+  .subsection img {
+    width: 400px;
   }
 }
