@@ -126,16 +126,16 @@ footer a:visited {
 }
 
 main {
-  max-width: 1500px;
   font-size: 1.1rem;
-  padding: 10px 10px;
+  padding: 10px;
   background-color: #04b0ff85;
-  display:flex;
+  display: flex;
   align-content: center;
   flex-flow: column;
 }
 
-main h1, main h2 {
+main h1,
+main h2 {
   text-align: center;
 }
 
@@ -161,7 +161,8 @@ main p {
   padding: 0px 0px 15px;
 }
 
-.subsection a, .subsection a:visited {
+.subsection a,
+.subsection a:visited {
   color: #3017d6;
   text-decoration: none;
 }
@@ -208,7 +209,7 @@ main p {
     font-size: 1.2rem;
   }
   main br {
-    display:block;
+    display: block;
   }
 
   .subsection img {

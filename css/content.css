@@ -3,14 +3,9 @@
   margin: 0px;
 }
 
-main h1 {
-  font: "Neuton";
-  font-size: 2rem;
-}
-
 .contentbox {
   border: 1px solid #000000;
-  padding: 10px;
+  margin: 10px;
   background-color: #4edf198a;
   display: flex;
   flex-direction: column;
