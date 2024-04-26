@@ -7,7 +7,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
   <title>Page 4</title>
+
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/content.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,35 +20,48 @@
 
 <body>
   <div id="content">
-  <header>
-    <img src="img/baseball.png" alt="A Baseball">
-    <h1>Baseball!</h1>
-    <div id="sideMenu" class="sidepanel">
-      <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">×</a>
-      <!-- This <BR> is to create a bit of space between the close button and the menu items-->
-      <BR>
-      <a href="index.html" class="menu-item">Home</a>
-      <a href="page2.html" class="menu-item">The MLB</a>
-      <a href="page3.html" class="menu-item">The Minor Leagues</a>
-      <a href="page4.html" class="menu-item" id = "current-page">Worldwide Leagues</a>
-      <a href="page5.html" class="menu-item">WBC and Olympics</a>
-    </div>
-    <button class="openbtn" onclick="openNav()">
-      &#9776;<span>Menu</span>
-    </button>
-  </header>
-  <main>
+    <header>
+      <img src="img/baseball.png" alt="A Baseball">
+      <h1>Baseball!</h1>
+      <div id="sideMenu" class="sidepanel">
+        <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">×</a>
+        <!-- This <BR> is to create a bit of space between the close button and the menu items-->
+        <BR>
+        <a href="index.html" class="menu-item">Home</a>
+        <a href="page2.html" class="menu-item">The MLB</a>
+        <a href="page3.html" class="menu-item">The Minor Leagues</a>
+        <a href="page4.html" class="menu-item" id="current-page">Worldwide Leagues</a>
+        <a href="page5.html" class="menu-item">WBC and Olympics</a>
+      </div>
+      <button class="openbtn" onclick="openNav()">
+        &#9776;<span>Menu</span>
+      </button>
+    </header>
+    <main>
+      <h2>International Play</h2>
+      <div class="contentbox">
+        <p>Although baseball has been around for over 150 years, it is still a growing sport. Many East Asian countries
+          are starting to get their own leagues and teams. Baseball in both Japan and Korea is very popular, and many of
+          the best players from either country end up playing in the MLB. One of the biggest international stars on the
+          field was Ichiro Suzuki. He has many fans in Japan, and when he made his MLB debut he only grew in stardom.
+          After retiring in 2019, he will be eligible for the MLB Hall of Fame in 2025. </p>
+        <p>
+          Not only are leagues very popular around the world, but baseball as a hobby is also growing. Pictured here is
+          a group of kids in Bhutan, a very isolated country in the Himalayas, playing baseball in front of a Buddha
+          statue. This photo was taken by Matthew DeSantis
+        </p>
+        <img src="img/bhutan_play.jpg" alt="The Minor League Baseball logo">
+      </div>
+    </main>
+    <footer>
+      <!-- information about me -->
+      This website was made by Sean-Paul Brown <BR>
+      Published - March 27, 2024. <BR>
+      &copy; copyright <BR>
+      <!-- using the <a> allows me to insert a hyperlink to my github account  -->
+      Find me on Github at <a href="https://github.com/s-brown01">s-brown01</a> to checkout my other projects!<BR>
 
-  </main>
-  <footer>
-    <!-- information about me -->
-    This website was made by Sean-Paul Brown <BR>
-    Published - March 27, 2024. <BR>
-    &copy; copyright <BR>
-    <!-- using the <a> allows me to insert a hyperlink to my github account  -->
-    Find me on Github at <a href="https://github.com/s-brown01">s-brown01</a> to checkout my other projects!<BR>
-
-  </footer>
+    </footer>
   </div>
   <script src="js/menu.js"></script>
 </body>

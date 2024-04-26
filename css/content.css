@@ -17,6 +17,10 @@
   line-height: 175%;
 }
 
+.contentbox p span {
+  display: none;
+}
+
 .contentbox img {
   text-align: center;
   width: 90%;
@@ -27,12 +31,17 @@
 /* Extended this min-width compared to styles.css */
 @media (min-width: 768px) {
   .contentbox {
-    /* display:flex; */
     flex-direction: row;
+    justify-content: space-evenly;
   }
 
   .contentbox img {
     margin: 20px;
     width: 40%;
+  }
+
+  .contentbox p span {
+    display: block;
+    line-height: 250%;
   }
 }
