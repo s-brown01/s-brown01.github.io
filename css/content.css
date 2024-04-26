@@ -13,6 +13,10 @@
   align-items: center;
 }
 
+.contentbox p {
+  line-height: 175%;
+}
+
 .contentbox img {
   text-align: center;
   width: 90%;
@@ -20,16 +24,15 @@
   margin: 10px;
 }
 
-@media (min-width: 600px) {
+/* Extended this min-width compared to styles.css */
+@media (min-width: 768px) {
   .contentbox {
     /* display:flex; */
     flex-direction: row;
-  } 
+  }
 
   .contentbox img {
-    margin-left: 20px;
+    margin: 20px;
     width: 40%;
   }
 }
-
-
