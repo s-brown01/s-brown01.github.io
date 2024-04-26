@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width" />
   <title>Page 5</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/content.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,38 +17,48 @@
     rel="stylesheet" />
 </head>
 
-<body>  
+<body>
   <div id="content">
 
-  <header>
-    <img src="img/baseball.png" alt="A Baseball">
-    <h1>Baseball!</h1>
-    <div id="sideMenu" class="sidepanel">
-      <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">×</a>
-      <!-- This <BR> is to create a bit of space between the close button and the menu items-->
-      <BR>
-      <a href="index.html" class="menu-item">Home</a>
-      <a href="page2.html" class="menu-item">The MLB</a>
-      <a href="page3.html" class="menu-item">The Minor Leagues</a>
-      <a href="page4.html" class="menu-item">Worldwide Leagues</a>
-      <a href="page5.html" class="menu-item" id="current-page">WBC and Olympics</a>
-    </div>
-    <button class="openbtn" onclick="openNav()">
-      &#9776;<span>Menu</span>
-    </button>
-  </header>
-  <main>
+    <header>
+      <img src="img/baseball.png" alt="A Baseball">
+      <h1>Baseball!</h1>
+      <div id="sideMenu" class="sidepanel">
+        <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">×</a>
+        <!-- This <BR> is to create a bit of space between the close button and the menu items-->
+        <BR>
+        <a href="index.html" class="menu-item">Home</a>
+        <a href="page2.html" class="menu-item">The MLB</a>
+        <a href="page3.html" class="menu-item">The Minor Leagues</a>
+        <a href="page4.html" class="menu-item">Worldwide Leagues</a>
+        <a href="page5.html" class="menu-item" id="current-page">WBC and Olympics</a>
+      </div>
+      <button class="openbtn" onclick="openNav()">
+        &#9776;<span>Menu</span>
+      </button>
+    </header>
+    <main>
+      <h2>International Tournaments</h2>
+      <div class="contentbox">
+        <img src="img/korean_baseball.jpg" alt="Korean pitcher mid-delivery" />
+        <p>There two major international tournaments: the World Baseball Classic (WBC) and the Olympics. The World
+          Baseball Classic is a tournament that happens every 4 years. The first tournament happened in 2006, where
+          Japan beat Cuba in San Diego. The most recent year 2023 (which was delayed becuase of the pandemic), Japan
+          also won, where they beat the US 3-2. The next competition will be in 2026. </p>
+        <p>At the Olypmics, baseball has been on and off in recent histroy. It was added 1984 and was voted out in 2012.
+          However, in 2020, baseball and softball cameback for a trial run. Now it will be officially added to the LA
+          Summer Olympics in 2028. </p>
+      </div>
+    </main>
+    <footer>
+      <!-- information about me -->
+      This website was made by Sean-Paul Brown <BR>
+      Published - March 27, 2024. <BR>
+      &copy; copyright <BR>
+      <!-- using the <a> allows me to insert a hyperlink to my github account  -->
+      Find me on Github at <a href="https://github.com/s-brown01">s-brown01</a> to checkout my other projects!<BR>
 
-  </main>
-  <footer>
-    <!-- information about me -->
-    This website was made by Sean-Paul Brown <BR>
-    Published - March 27, 2024. <BR>
-    &copy; copyright <BR>
-    <!-- using the <a> allows me to insert a hyperlink to my github account  -->
-    Find me on Github at <a href="https://github.com/s-brown01">s-brown01</a> to checkout my other projects!<BR>
-
-  </footer>
+    </footer>
   </div>
   <script src="js/menu.js"></script>
 </body>

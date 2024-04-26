@@ -21,6 +21,13 @@
   display: none;
 }
 
+.contentbox ol {
+  margin: 5px;
+  padding: 5px;
+  /* brings the numbers "inside" of the box, default it is outside */
+  list-style-position: inside;
+}
+
 .contentbox img {
   text-align: center;
   width: 90%;
@@ -38,6 +45,10 @@
   .contentbox img {
     margin: 20px;
     width: 40%;
+  }
+
+  .contentbox ol {
+    width: 175%;
   }
 
   .contentbox p span {
