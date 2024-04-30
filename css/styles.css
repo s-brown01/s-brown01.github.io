@@ -158,7 +158,8 @@ main p {
 
 .subsection img {
   width: 70%;
-  padding: 0px 0px 15px;
+  margin: 15px 0px;
+  box-shadow: 0px 0px 10px 10px #7cd6ff;
 }
 
 .subsection a,
@@ -206,7 +207,7 @@ main p {
   }
 
   main {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   main br {
     display: block;
